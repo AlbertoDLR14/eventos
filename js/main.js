@@ -66,7 +66,7 @@ function renderEvents(){
                 <span class="days-text">días</span>
             </div>
             <div class="event-name">${event.name}</div>
-            <div class="event-name">${event.date}</div>
+            <div class="event-date">${event.date}</div>
             <div class="actions">
                 <button class="eliminar" data-id="${event.id}">Eliminar</button>
             </div>

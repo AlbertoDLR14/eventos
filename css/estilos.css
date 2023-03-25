@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #242836;
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 500px;
+}
+.form{
+    background-color: #5A5898;
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form form input{
+    height: 35px;
+    padding: 0 10px;
+}
+#bAdd{
+    background-color: #7B68BE;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    transition: box-shadow 0.5s ease;
+}
+#bAdd:hover{
+    background-color: #9e87f3;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#eventsContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.event{
+    width: 100%;
+    padding: 25px;
+    background-color: #4E5368;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    transition: transform 0.5s ease;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1.5fr 1fr;
+    gap: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.event:last-child{
+    border-bottom: none;
+}
+.event:first-child{
+    border-top: none;
+}
+.event:hover{
+    transform: scale(1.06);
+}
+
+.days{
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #9e87f3;
+}
+.days-text{
+    font-size: 0.6em;
+}
+.event-name{
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.event-date{
+    grid-column: 3/4;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 0.8em;
+    font-weight: 200;
+    color: #9e87f3;
+}
+.actions{
+    grid-column: 4/-1;
+}
+
+.actions{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.actions .eliminar{
+    background-color: #A12D5F;
+    color:white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.actions .eliminar:hover{
+    background-color: #cf3e7d;
+}
